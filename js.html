@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title> Teste </title>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    </head>
+<body>
+
+<!-- ng - diretivas app- elemento raiz de um app -->
+<!--model- vincula o valor da entrada para uma variavel escopo -->
+
+<div ng-app="">
+<p>Nome: 
+<input type="text" style="background-color:Gainsboro"  ng-model="nome">
+</p>
+<!--Ao clicar no botão irá abrir form.html -->
+<form action="form.html" >
+
+<p>Bem Vindo!<h3> <b><p>{{nome}}</h3></p>
+    <br>
+<input type="submit" value="Clica Aqui" />
+<br><br>
+</form>
+</div>
+
+
+
+</body>
+</html>
