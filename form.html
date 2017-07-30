@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title> Formulário </title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<!-- Para mosrtrar caracteres especiais -->
+<meta name="description" content="Como usar charset na <meta> tag">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+<!-- Formulário-->
+
+<div ng-app="">
+    <form action="mailto:someone@somewhere.com" method="post">
+<p>Nome Completo: 
+<input type="text" type="text" style="background-color:Gainsboro"  ng-model="nome" required>
+</p>
+<input type="radio" name="sex" value ="Male">Masculino<br />        
+<input type="radio" name="sex" value ="Female">Feminino
+<p>Data de Nasc.: 
+<input type="date" style="width:125px; background-color:Gainsboro">
+</p>
+<p>Email: 
+<input type="text"  ng-model="email" required>
+</p>
+<p>Fale um pouco de você: 
+<textarea  style="background-color:Gainsboro"  ng-model="texto" maxlength="255"></textarea>
+</p>
+
+  <input type="submit" value="Enviar">
+  <!--irá voltar para página principal -->
+  <input type='button' onclick='javascript:window.history.go(-1)' value=' Voltar' name='Voltar' 
+
+    </form>
+
+
+</div>
+
+
+
+</body>
+</html>
